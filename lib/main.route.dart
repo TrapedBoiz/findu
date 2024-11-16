@@ -1,9 +1,11 @@
+import 'package:findu/data/repository/firebase.repo.dart';
 import 'package:findu/main.dart';
 import 'package:findu/presenter/home/home.page.dart';
 import 'package:findu/presenter/register/register.page.dart';
 import 'package:findu/presenter/splash/splash.page.dart';
 import 'package:findu/route.path.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -14,7 +16,10 @@ final GoRouter routerMain = GoRouter(
     GoRoute(
       path: '/',
       builder: (BuildContext context, GoRouterState state) {
-        return const SplashPage();
+        return RepositoryProvider(
+          create: (context) => FirebaseRepo(),
+          child: const SplashPage(),
+        );
       },
       routes: <RouteBase>[
         GoRoute(
@@ -33,8 +38,6 @@ final GoRouter routerMain = GoRouter(
     ),
   ],
 );
-
-
 
 class MyNavigatorObserver extends NavigatorObserver {
   static var listRoute = <String>[];

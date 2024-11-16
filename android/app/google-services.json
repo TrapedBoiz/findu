@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529860671893",
+    "project_id": "findu-ea407",
+    "storage_bucket": "findu-ea407.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529860671893:android:09e9c762b4274af6fd9e9c",
+        "android_client_info": {
+          "package_name": "com.hn86.findu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529860671893-3gm8vmtctue4g0cmfg98b12se0q9f0kb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkzzaC7F4nbc_qmqsfmvHrHwi_WoErKVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529860671893-3gm8vmtctue4g0cmfg98b12se0q9f0kb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
