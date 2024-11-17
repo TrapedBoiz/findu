@@ -9,6 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rxdart/rxdart.dart';
 
+final navigatorKey = GlobalKey<NavigatorState>();
 final GoRouter routerMain = GoRouter(
   observers: [MyNavigatorObserver()],
   navigatorKey: navigatorKey,
